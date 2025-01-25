@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Labo_0_1.iml" filepath="$PROJECT_DIR$/.idea/modules/Labo_0_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Labo_0_1.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Labo_0_1.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Labo_0_1.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Labo_0_1.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/labo0_0/Labo_0_1.app.labo0_0.iml" filepath="$PROJECT_DIR$/.idea/modules/app/labo0_0/Labo_0_1.app.labo0_0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/labo0_0/Labo_0_1.app.labo0_0.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/labo0_0/Labo_0_1.app.labo0_0.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/labo0_0/Labo_0_1.app.labo0_0.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/labo0_0/Labo_0_1.app.labo0_0.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/labo0_0/Labo_0_1.app.labo0_0.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/labo0_0/Labo_0_1.app.labo0_0.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/labo1_1/Labo_0_1.app.labo1_1.iml" filepath="$PROJECT_DIR$/.idea/modules/app/labo1_1/Labo_0_1.app.labo1_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/labo1_1/Labo_0_1.app.labo1_1.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/labo1_1/Labo_0_1.app.labo1_1.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/labo1_1/Labo_0_1.app.labo1_1.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/labo1_1/Labo_0_1.app.labo1_1.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/labo1_1/Labo_0_1.app.labo1_1.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/labo1_1/Labo_0_1.app.labo1_1.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/labo1_2/Labo_0_1.app.labo1_2.iml" filepath="$PROJECT_DIR$/.idea/modules/app/labo1_2/Labo_0_1.app.labo1_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/labo1_2/Labo_0_1.app.labo1_2.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/labo1_2/Labo_0_1.app.labo1_2.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/labo1_2/Labo_0_1.app.labo1_2.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/labo1_2/Labo_0_1.app.labo1_2.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/labo1_2/Labo_0_1.app.labo1_2.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/labo1_2/Labo_0_1.app.labo1_2.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Labo_0_1.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Labo_0_1.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Labo_0_1.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Labo_0_1.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>
