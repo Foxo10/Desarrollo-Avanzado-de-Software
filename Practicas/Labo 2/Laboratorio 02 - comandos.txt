@@ -1,9 +1,0 @@
-Pagina 4
-
-Locale nuevaloc = new Locale("eu");
-Locale.setDefault(nuevaloc);
-Configuration config = new Configuration();
-config.locale = nuevaloc;
-getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
-finish();
-startActivity(getIntent());
