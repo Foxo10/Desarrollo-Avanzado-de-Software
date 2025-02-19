@@ -1,0 +1,58 @@
+Pagina 10
+
+Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+Uri uri = Uri.fromParts("package", getPackageName(), null);
+intent.setData(uri);
+startActivity(intent);
+
+
+Pagina 12
+
+private String historicoLlamadas() {
+
+        StringBuffer texto = new StringBuffer();
+
+        try
+        {
+            Cursor cursorDatos = getApplicationContext().getContentResolver().query(CallLog.Calls.CONTENT_URI, null,null, null, null);
+
+            int tfno = cursorDatos.getColumnIndex(CallLog.Calls.NUMBER);
+            int tipollamada = cursorDatos.getColumnIndex(CallLog.Calls.TYPE);
+            int fecha = cursorDatos.getColumnIndex(CallLog.Calls.DATE);
+            int duracion = cursorDatos.getColumnIndex(CallLog.Calls.DURATION);
+
+            texto.append("HISTORICO DE LLAMADAS:");
+            while (cursorDatos.moveToNext()) {
+                String numero = cursorDatos.getString(tfno);
+                String tipo = cursorDatos.getString(tipollamada);
+                Date fechallamada = new Date(Long.valueOf(cursorDatos.getString(fecha)));
+                String duracionllamada = cursorDatos.getString(duracion);
+                String dir = null;
+                switch (Integer.parseInt(tipo)) {
+                    case CallLog.Calls.OUTGOING_TYPE:
+                        dir = "REALIZADA";
+                        break;
+
+                    case CallLog.Calls.INCOMING_TYPE:
+                        dir = "RECIBIDA";
+                        break;
+
+                    case CallLog.Calls.MISSED_TYPE:
+                        dir = "PERDIDA";
+                        break;
+                }
+                texto.append("\nNumero de telefono:--- " + numero + " \nTipo de llamada:--- "
+                        + dir + " \nFecha:--- " + fechallamada
+                        + " \nDuracion en segundos :--- " + duracionllamada);
+                texto.append("\n----------------------------------");
+            }
+            cursorDatos.close();
+        }
+        catch (SecurityException e)
+        {
+            e.printStackTrace();
+        }
+
+        return texto.toString();
+    }

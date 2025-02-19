@@ -1,0 +1,76 @@
+Pagina 6
+
+
+ArrayAdapter eladaptador =
+                new ArrayAdapter<String>(this, android.R.layout.simple_list_item_2,android.R.id.text2,arraydedatos){
+
+                    @Override
+                    public View getView(int position,  View convertView, ViewGroup parent) {
+                        View vista= super.getView(position, convertView, parent);
+                        TextView lineaprincipal=(TextView) vista.findViewById(android.R.id.text1);
+                        TextView lineasecundaria=(TextView) vista.findViewById(android.R.id.text2);
+                        lineaprincipal.setText(arraydedatos[position]);
+                        lineasecundaria.setText(arrayedades[position].toString());
+                        return vista;
+                    }
+                };
+        ListView lalista = findViewById(R.id.list);
+        lalista.setAdapter(eladaptador);
+
+Pagina 16
+
+public View getView(int i, View view, ViewGroup viewGroup) {
+        final int fila=i;
+        view=inflater.inflate(R.layout.fila,null);
+        TextView nombre= (TextView) view.findViewById(R.id.etiqueta);
+        ImageView img=(ImageView) view.findViewById(R.id.imagen);
+        RatingBar barra= (RatingBar) view.findViewById(R.id.barra);
+        
+        nombre.setText(datos[i]);
+        img.setImageResource(imagenes[i]);
+        barra.setRating((float)puntuaciones[i]);
+        return view;
+    }
+
+Pagina 21
+
+Button elboton= (Button) view.findViewById(R.id.boton);
+        elboton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("etiqueta", "Mensaje");
+            }
+        });
+
+Pagina 23
+
+implementation 'com.android.support:cardview-v7:28.0.0'
+
+Pagina 25
+
+implementation 'com.android.support:recyclerview-v7:28.0.0'
+
+Pagina 40
+
+ public ElViewHolder (View v){
+        super(v);
+        eltexto=v.findViewById(R.id.texto);
+        laimagen=v.findViewById(R.id.foto);
+        v.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (seleccion[getAdapterPosition()]==true){
+                    seleccion[getAdapterPosition()]=false;
+                    laimagen.setColorFilter(null);
+                    
+                }
+                else{
+                    seleccion[getAdapterPosition()]=true;
+                    laimagen.setColorFilter(Color.BLACK);
+                }
+            }
+        });
+    }
+
+
+

@@ -1,0 +1,28 @@
+Pagina 1
+
+Toast.makeText(getApplicationContext(),"Mensaje",Toast.LENGTH_LONG).show();
+
+int tiempo= Toast.LENGTH_SHORT;
+Toast aviso = Toast.makeText(this, "Mensaje", tiempo);
+aviso.setGravity(Gravity.TOP| Gravity.LEFT, 0, 0);
+aviso.show();
+
+LayoutInflater inflater = getLayoutInflater();
+View el_layout = inflater.inflate(R.layout.toastlayout,(ViewGroup) findViewById(R.id.idlayout));
+Toast toastcustomizado = new Toast(this);
+toastcustomizado.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+toastcustomizado.setDuration(Toast.LENGTH_LONG);
+toastcustomizado.setView(el_layout);
+toastcustomizado.show();
+
+Pagina 4
+
+lalista.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+    @Override
+    public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+        arraydedatos.remove(i);
+        eladaptador.notifyDataSetChanged();
+        Log.d("etiquetalarga", ((TextView)view).getText().toString()+", "+i);
+        return true;
+    }
+});

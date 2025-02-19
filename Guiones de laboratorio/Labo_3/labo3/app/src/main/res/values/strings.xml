@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ToDo list</string>
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary">#FF5722</item>
+        <item name="colorPrimaryDark">#D32F2F</item>
+        <item name="colorAccent">#FFC107</item>
+    </style>
+</resources>

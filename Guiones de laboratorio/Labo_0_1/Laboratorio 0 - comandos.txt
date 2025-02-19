@@ -1,0 +1,24 @@
+Pagina 2
+
+sudo apt-get install lib32z1 lib32ncurses5 libbz2-1.0:i386 lib32stdc++6
+sudo apt install libcanberra-gtk-module
+
+Pagina 3
+
+egrep -c '(vmx|svm)' /proc/cpuinfo
+sudo apt-get install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
+
+Pagina 6
+
+sudo gedit /etc/udev/rules.d/51.android.rules
+sudo chmod a+rx /etc/udev/rules.d/51-android.rules
+sudo service udev restart
+cd ~/.android
+sudo gedit adb_usb.ini
+sudo service udev restart
+
+Pagina 7
+
+gedit .profile
+export ANDROID_EMULATOR_FORCE_32BIT=true
+source .profile
